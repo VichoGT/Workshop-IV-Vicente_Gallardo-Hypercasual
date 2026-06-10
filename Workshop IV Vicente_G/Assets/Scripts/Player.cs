@@ -24,8 +24,9 @@ public class Player : MonoBehaviour
     {
         transform.DOScaleY(0, 8);
     }
-
+        
     [System.Obsolete]
+
     private void Update()
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, minMaxX.x, minMaxX.y), 0, transform.position.z);
@@ -37,8 +38,8 @@ public class Player : MonoBehaviour
             Debug.Log("Game Over");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
-
     }
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("SmallCandle"))
