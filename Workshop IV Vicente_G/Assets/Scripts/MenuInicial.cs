@@ -5,20 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-    public GameObject instructionsMenu;
+    public GameObject optionsMenu;
     public GameObject mainMenu;
      
 
-    public void OpenInstrucsPanel()
+    public void OpenOptionsPanel()
     {
-        Debug.Log("Se abre");
         mainMenu.SetActive(false);
-        instructionsMenu.SetActive(true);
+        optionsMenu.SetActive(true);
     }
     public void OpenMainMenuPanel()
     {
         mainMenu.SetActive(true);
-        instructionsMenu.SetActive(false);
+        optionsMenu.SetActive(false);
     }
     public void Jugar()
     {

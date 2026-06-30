@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152808265}
+  - component: {fileID: 152808266}
   m_Layer: 0
   m_Name: InstructionsMenu
   m_TagString: Untagged
@@ -153,6 +154,19 @@ Transform:
   - {fileID: 1954874414}
   m_Father: {fileID: 1850685157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152808266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152808264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e9beadcf6b81544ba71d08e6d37a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuOpciones
+  audiomixer: {fileID: 0}
 --- !u!1 &233434327
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Atras
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -501,7 +515,7 @@ GameObject:
   - component: {fileID: 451209779}
   - component: {fileID: 451209778}
   m_Layer: 0
-  m_Name: Instructionstxt
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: 400}
+  m_AnchoredPosition: {x: -83, y: 397}
   m_SizeDelta: {x: 391.7858, y: 308.201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451209778
@@ -546,8 +560,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Arrastra el rat\xF3n o tu dedo en la pantalla mientras lo mantienes pulsado
-    para moverte\n\n-Coge tantas velas como puedas antes de que te apagues."
+  m_text: '-Drag the mouse while holding down the left or right click to move
+
+
+    -Grab
+    as many candles as possible before you burn out.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -684,7 +701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir
+  m_text: Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -777,7 +794,7 @@ GameObject:
   - component: {fileID: 691890271}
   - component: {fileID: 691890270}
   m_Layer: 5
-  m_Name: Jugar
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,7 +1050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Instrucciones
+  m_text: Instructions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1170,7 +1187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jugar
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1338,7 +1355,7 @@ GameObject:
   - component: {fileID: 1576727444}
   - component: {fileID: 1576727443}
   m_Layer: 5
-  m_Name: Salir
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1562,7 +1579,7 @@ GameObject:
   - component: {fileID: 1847386594}
   - component: {fileID: 1847386593}
   m_Layer: 0
-  m_Name: InstructionsTittle
+  m_Name: Instructionstxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Instrucciones
+  m_text: Instructions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1805,7 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c442d9b5dd96051418ca3ad10118a0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuInicial
-  instructionsMenu: {fileID: 152808264}
+  optionsMenu: {fileID: 152808264}
   mainMenu: {fileID: 1924191476}
 --- !u!1 &1924191476
 GameObject:
@@ -1869,7 +1886,7 @@ RectTransform:
   m_GameObject: {fileID: 1954874413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1233.1521}
-  m_LocalScale: {x: 2.2462997, y: 2.2462997, z: 2.2462997}
+  m_LocalScale: {x: 2.2463, y: 2.2463, z: 2.2463}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 427216343}
@@ -1877,7 +1894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121.999985, y: 86.5567}
+  m_AnchoredPosition: {x: -122, y: 101}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1954874415
@@ -1987,7 +2004,7 @@ GameObject:
   - component: {fileID: 1960046778}
   - component: {fileID: 1960046777}
   m_Layer: 5
-  m_Name: Instructions
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2059,7 +2076,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1850685158}
         m_TargetAssemblyTypeName: MenuInicial, Assembly-CSharp
-        m_MethodName: OpenInstrucsPanel
+        m_MethodName: OpenOptionsPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

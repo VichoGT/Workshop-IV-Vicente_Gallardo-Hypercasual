@@ -6,7 +6,6 @@ TagManager:
   tags:
   - SmallCandle
   - BoostPad
-  - Wall
   layers:
   - Default
   - TransparentFX
