@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         
     [System.Obsolete]
 
-    private void Update()
+    private void LateUpdate()
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, minMaxX.x, minMaxX.y), 0, transform.position.z);
         rb.velocity = new Vector3(joystick.Horizontal * leftRightSpd * Time.deltaTime, rb.velocity.y, forwardSpd * Time.deltaTime);
@@ -36,10 +36,11 @@ public class Player : MonoBehaviour
         {
             DOTween.Kill(transform);
             Debug.Log("Game Over");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            //gameOverUI.ShowGameOver();
         }
     }
-   
+
+  
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("SmallCandle"))
@@ -59,6 +60,8 @@ public class Player : MonoBehaviour
         }
 
     }
+
+
     private IEnumerator ApplySpeedBoost(float multiplier, float duration)
     {
         forwardSpd *= multiplier;
